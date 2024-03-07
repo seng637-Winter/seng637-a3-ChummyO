@@ -10,17 +10,17 @@
 | | use(3) = {b1, this.lower} |
 | | use(4) = {b0, b1, this.lower} |
 | du-pairs: | for b0: (1, 2), (1, 4) |
-| | for b1: (0, 2), (0, 4) |
+| | for b1: (1, 3), (1, 4) |
 
-#### Table 5. DU-Pair Coverage Calculation for Each Test Case
+#### Table 5. DU-Pair per variable
 | Variable | Def at node (n) | DCU (v, n) | DPU (v, n) |
 |:--:|:--:|:--:|:--:|
-| b0 | 1 | {} | {(2, 3), (2, 4), (3, END), (4, END)} |
-| b1 | 1 | {} | {(4, END)} |
+| b0 | 1 | {} | {(2, 3), (2, 4)} |
+| b1 | 1 | {} | {} |
 
 Total
 CU = 0
-PU = 4
+PU = 2
 
 #### Table 6. DU-Pair Coverage
 | | |
