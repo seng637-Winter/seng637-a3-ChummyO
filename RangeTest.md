@@ -1,4 +1,5 @@
-## Range.Intersect
+## Manual data-flow coverage calculations for Intersect method for Range Class
+### Range.Intersect
 
 ![man_flow_1](Data_flow_graph_Range_class.png)
 
