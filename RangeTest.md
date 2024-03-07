@@ -177,7 +177,7 @@ After new test cases
 ![](Method_after_range.png) 
 
 
-## pros and cons of using Eclemma
+## Pros and Cons of using Eclemma
 
 
 PROS 
