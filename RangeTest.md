@@ -12,7 +12,7 @@
 | du-pairs: | for b0: (1, 2), (1, 4) |
 | | for b1: (1, 3), (1, 4) |
 
-#### Table 5. DU-Pair per variable
+#### DU-Pair per variable
 | Variable | Def at node (n) | DCU (v, n) | DPU (v, n) |
 |:--:|:--:|:--:|:--:|
 | b0 | 1 | {} | {(2, 3), (2, 4)} |
@@ -22,23 +22,20 @@ Total
 CU = 0
 PU = 2
 
-#### Table 6. DU-Pair Coverage
+#### DU-Pair Coverage
 | | |
 |:--:|:--:|
 | Test Case | DU-pairs covered |
-| intersectsWithBLBAndLB | dpu {(2, 3), (3, END)} |
-| intersectsWithBLBAndALB | dpu {(2, 3), (3, END)} |
-| intersectsWithBLBAndAUB | dpu {(2, 3), (3, END)} |
-| intersectsWithLBAndALB | dpu {(2, 3), (3, END)} |
-| intersectsWithLBAndUB | dpu {(2, 3), (3, END)} |
-| intersectsWithNormalAndNormal | dpu {(2, 4), (4, END)} |
-| intersectsWithBUBAndUB | dpu {(2, 4), (4, END)} |
-| intersectsWithBUBAndAUB | dpu {(2, 4), (4, END)} |
-| intersectsWithUBAndAUB | dpu {(2, 4), (4, END)} |
-| intersectsWithInputAUBAndMAX | dpu {(2, 4), (4, END)} |
-| intersectsWithInputBLBAndMIN | dpu {(2, 3), (3, END)} |
-| intersectsWithInputNaNAnd1 | dpu {(2, 4), (4, END)} |
+| intersectsWithBLBAndLB | dpu {(2, 3)} |
+| intersectsWithBLBAndALB | dpu {(2, 3)} |
+| intersectsWithBLBAndAUB | dpu {(2, 3)} |
+| intersectsWithLBAndALB | dpu {(2, 3)} |
+| intersectsWithLBAndUB | dpu {(2, 3)} |
+| intersectsWithNormalAndNormal | dpu {(2, 4)} |
+| intersectsWithBUBAndUB | dpu {(2, 4)} |
+| intersectsWithBUBAndAUB | dpu {(2, 4)} |
+| intersectsWithUBAndAUB | dpu {(2, 4)} |
+| intersectsWithInputAUBAndMAX | dpu {(2, 4)} |
+| intersectsWithInputBLBAndMIN | dpu {(2, 3)} |
+| intersectsWithInputNaNAnd1 | dpu {(2, 4)} |
 
-Total
-CU<sub>c</sub> = 0
-PU<sub>c</sub> = 4
