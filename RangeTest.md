@@ -158,3 +158,20 @@ After new test cases
 - Method
 
 ![](Method_before_range.png) 
+
+## Screenshot of code coverage after new test
+
+### RANGE 
+
+- Instruction 
+  
+
+![](Instruction_after_range.png)  
+
+- Branch 
+
+![](branch_after_range.png) 
+
+- Method
+
+![](Method_after_range.png) 
