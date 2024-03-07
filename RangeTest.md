@@ -175,3 +175,19 @@ After new test cases
 - Method
 
 ![](Method_after_range.png) 
+
+
+## pros and cons of using Eclemma
+
+
+PROS 
+- Free to use
+- Easy to install and get started with in Eclipse
+- EclEmma provides insights into the code coverage of your tests, indicating which parts of your code are exercised by your test suite
+- The tool offers a visual representation of code coverage within the Eclipse IDE, making it easy for developers to identify uncovered or less-covered code.
+- EclEmma supports various coverage metrics such as line coverage, branch coverage, and method coverage, providing a comprehensive view of your test coverage.
+- EclEmma generates detailed reports, allowing developers to drill down into specific classes, methods, and lines of code to understand coverage metrics.
+
+CONS 
+- EclEmma is specific to Java programming language, so if you are working with other languages, you'll need to use different tools for code coverage analysis.
+- While it integrates well with Eclipse, if you are not using Eclipse or have a different IDE, you may need to use a different code coverage tool that is compatible with your development environment.
