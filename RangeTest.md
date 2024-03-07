@@ -40,3 +40,85 @@ PU = 2
 | intersectsWithInputBLBAndMIN | dpu {(2, 3)} |
 | intersectsWithInputNaNAnd1 | dpu {(2, 4)} |
 
+## Testing strategy used
+The testing strategy used this time since it is a white-box testing exercise was to look at the source code and carry out a statement coverage
+
+For Range.combineIgnoringNaN the test cases are shown below
+
+```
+    @Test
+    public void testCombineIgnoringNaN_bothRangesNull() {
+        Range result = Range.combineIgnoringNaN(null, null);
+        assertNull(result);
+    }
+
+    @Test
+    public void testCombineIgnoringNaN_range1Null() {
+        Range range2 = new Range(1.0, 5.0);
+        Range result = Range.combineIgnoringNaN(null, range2);
+        assertEquals(range2, result);
+    }
+
+    @Test
+    public void testCombineIgnoringNaN_range2Null() {
+        Range range1 = new Range(1.0, 5.0);
+        Range result = Range.combineIgnoringNaN(range1, null);
+        assertEquals(range1, result);
+    }
+
+    @Test
+    public void testCombineIgnoringNaN_bothRangesNotNull() {
+        Range range1 = new Range(1.0, 5.0);
+        Range range2 = new Range(3.0, 7.0);
+        Range result = Range.combineIgnoringNaN(range1, range2);
+        assertEquals(new Range(1.0, 7.0), result);
+    }
+
+    @Test
+    public void testCombineIgnoringNaN_range1NaN() {
+        Range range1 = new Range(Double.NaN, 5.0);
+        Range range2 = new Range(3.0, 7.0);
+        Range result = Range.combineIgnoringNaN(range1, range2);
+        assertEquals(range2, result);
+    }
+
+    @Test
+    public void testCombineIgnoringNaN_range2NaN() {
+        Range range1 = new Range(1.0, 5.0);
+        Range range2 = new Range(Double.NaN, 7.0);
+        Range result = Range.combineIgnoringNaN(range1, range2);
+        assertEquals(range1, result);
+    }
+
+    @Test
+    public void testCombineIgnoringNaN_bothRangesNaN() {
+        Range range1 = new Range(Double.NaN, 5.0);
+        Range range2 = new Range(Double.NaN, 7.0);
+        Range result = Range.combineIgnoringNaN(range1, range2);
+        assertNull(result);
+    }
+    
+    @Test
+    public void testCombineIgnoringNaN_bothRangesNa() {
+        Range range1 = new Range(Double.NaN, Double.NaN);
+        Range range2 = new Range(Double.NaN, Double.NaN);
+        Range result = Range.combineIgnoringNaN(range1, range2);
+        assertNull(result);
+    }
+    
+    @Test
+    public void testCombineIgnoringNaN_Range1Null() {
+        Range range1 = null;
+        Range range2 = new Range(Double.NaN, Double.NaN);
+        Range result = Range.combineIgnoringNaN(range1, range2);
+        assertNull(result);
+    }
+    
+    @Test
+    public void testCombineIgnoringNaN_Range2Null() {
+        Range range1 = new Range(Double.NaN, Double.NaN);
+        Range range2 = null;
+        Range result = Range.combineIgnoringNaN(range1, range2);
+        assertNull(result);
+    }
+```
