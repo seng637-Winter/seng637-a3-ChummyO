@@ -141,3 +141,20 @@ After new test cases
 | Instruction | 100.0 % |
 | Branch | 100.0 % | 
 | Method | 100.0 % | 
+
+## Screenshot of code coverage before new test
+
+### RANGE 
+
+- Instruction 
+  
+
+![](Instruction_before_range.png)  
+
+- Branch 
+
+![](branch_before_range.png) 
+
+- Method
+
+![](Method_before_range.png) 
