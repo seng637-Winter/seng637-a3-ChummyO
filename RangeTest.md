@@ -127,7 +127,7 @@ This improved the coverage a lot
 Before new test cases
 
 | | Coverage Before new tests |
-|:--:|:--:|:--|
+|:--:|:--:|
 | Instruction | 0.0 % |
 | Branch | 0.0 % | 
 | Method | 0.0 % | 
@@ -137,7 +137,7 @@ The tests had 0.0% coverage because it wasn't part of the method considered in a
 After new test cases
 
 | | Coverage Before new tests |
-|:--:|:--:|:--|
+|:--:|:--:|
 | Instruction | 100.0 % |
 | Branch | 100.0 % | 
 | Method | 100.0 % | 
